@@ -26,7 +26,7 @@ class Card():
     def play(self):
         z = 0
         while self._life > 0:
-            print(f'Type #{5-z}: {self.tips[z]}')
+            print(f'Type #{z+1}: {self.tips[z]}')
             z += 1
             print()
             x = str(input("Input your answer>> ")).capitalize()
