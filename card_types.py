@@ -1,5 +1,6 @@
 from card import Card
 
+# VEHICLES
 car = Card("Car")
 car.add_tips("Has a windshield",
             "Has four doors",
@@ -18,6 +19,7 @@ motorcycle.add_tips("Has two seats",
 vehicles = [car, motorcycle]
 
 
+#COUNTRY
 brasil = Card('Brasil')
 brasil.add_tips("Soccer",
                 "Bad governments",

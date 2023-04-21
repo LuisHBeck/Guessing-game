@@ -1,3 +1,5 @@
+import os
+
 class Card():
     def __init__(self, name) -> None:
         self._name = name
@@ -22,12 +24,12 @@ class Card():
     def play(self):
         z = 0
         while self._life > 0:
+            os.system("cls")
             print(f'Type #{z+1}: {self.tips[z]}')
             z += 1
-            print()
             x = str(input("Input your answer>> ")).capitalize()
             if x == self.name:
-                print("You won!")
+                print("Congrats buddy!! You won!")
                 break
             else:
                 self._life -= 1
