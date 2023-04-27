@@ -20,16 +20,25 @@ class Card():
 
     def lose_file(self, value=1):
         return self._life - value
+    
+    def print_tips(self, z):
+        os.system("cls")
+        print(f'Type #{z+1}: {self.tips[z]}')
+        
+    def verify_answer(self, answer):
+        if answer == self.name:
+            print("Congrats buddy!! You won!")
+            quit()
+        else:
+            self._life -= 1
 
     def play(self):
         z = 0
         while self._life > 0:
-            os.system("cls")
-            print(f'Type #{z+1}: {self.tips[z]}')
+            self.print_tips(z)
             z += 1
-            x = str(input("Input your answer>> ")).capitalize()
-            if x == self.name:
-                print("Congrats buddy!! You won!")
-                break
-            else:
-                self._life -= 1
+            answer = str(input("Input your answer>> ")).capitalize()
+            self.verify_answer(answer)
+            
+                
+            
