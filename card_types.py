@@ -3,39 +3,40 @@ import json
 
 # VEHICLES
 car = Card("Car",
-        ["Has a windshield",
+        "Has a windshield",
         "Has four doors",
         "Has four wheels",
         "Has five seats",
-        "Needs a driver"])
+        "Needs a driver")
 
 
 motorcycle = Card("Motorcycle",
-                ["Has two seats",
+                "Has two seats",
                 "Has two wheels",
                 "Has no doors",
                 "You can do a wheelie",
-                "Randandandandandan"])
+                "Randandandandandan")
 
 vehicles = [car, motorcycle]
 
 #COUNTRY
 brasil = Card('Brasil',
-            ["Soccer",
+            "Soccer",
             "Bad governments",
             "Rice and beans",
             "Street Carnival",
-            "Samba"])
+            "Samba")
 
 germany = Card("Germany",
-            ["Robert Bosch was born",
+            "Robert Bosch was born",
             "Bosch head office",
             "Berlin Wall",
             "First world country",
-            "Where the car was invented"])
+            "Where the car was invented")
 
 country = [brasil, germany]
-cards = [vars(car), vars(motorcycle), vars(brasil), vars(germany)]
 
-with open('card_types.json', 'w', encoding='utf8') as archive:
-    json.dump(cards, archive, ensure_ascii=False, indent=2)
+# cards = [vars(car), vars(motorcycle), vars(brasil), vars(germany)]
+
+# with open('card_types.json', 'w', encoding='utf8') as archive:
+#     json.dump(cards, archive, ensure_ascii=False, indent=2)

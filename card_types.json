@@ -2,49 +2,45 @@
   {
     "_name": "Car",
     "_tips": [
-      [
-        "Has a windshield",
-        "Has four doors",
-        "Has four wheels",
-        "Has five seats",
-        "Needs a driver"
-      ]
-    ]
+      "Has a windshield",
+      "Has four doors",
+      "Has four wheels",
+      "Has five seats",
+      "Needs a driver"
+    ],
+    "_life": 5
   },
   {
     "_name": "Motorcycle",
     "_tips": [
-      [
-        "Has two seats",
-        "Has two wheels",
-        "Has no doors",
-        "You can do a wheelie",
-        "Randandandandandan"
-      ]
-    ]
+      "Has two seats",
+      "Has two wheels",
+      "Has no doors",
+      "You can do a wheelie",
+      "Randandandandandan"
+    ],
+    "_life": 5
   },
   {
     "_name": "Brasil",
     "_tips": [
-      [
-        "Soccer",
-        "Bad governments",
-        "Rice and beans",
-        "Street Carnival",
-        "Samba"
-      ]
-    ]
+      "Soccer",
+      "Bad governments",
+      "Rice and beans",
+      "Street Carnival",
+      "Samba"
+    ],
+    "_life": 5
   },
   {
     "_name": "Germany",
     "_tips": [
-      [
-        "Robert Bosch was born",
-        "Bosch head office",
-        "Berlin Wall",
-        "First world country",
-        "Where the car was invented"
-      ]
-    ]
+      "Robert Bosch was born",
+      "Bosch head office",
+      "Berlin Wall",
+      "First world country",
+      "Where the car was invented"
+    ],
+    "_life": 5
   }
 ]
