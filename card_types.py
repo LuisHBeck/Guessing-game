@@ -1,4 +1,5 @@
 from card import Card
+import json
 
 # VEHICLES
 car = Card("Car")
@@ -37,4 +38,7 @@ germany.add_tips("Robert Bosch was born",
 
 country = [brasil, germany]
 
+cards = [vars(car), vars(motorcycle), vars(brasil), vars(germany)]
 
+with open('card_types.json', 'w', encoding='utf8') as archive:
+    json.dump(cards, archive, ensure_ascii=False, indent=2)
