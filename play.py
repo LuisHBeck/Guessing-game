@@ -29,6 +29,7 @@ def player():
         card = choice(people)
 
     person.card = card
+    
     person.card.play(person.name, person.life)
 
         
