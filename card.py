@@ -21,9 +21,9 @@ class Card():
     def lose_file(self, value=1):
         return self._life - value
 
-    def play(self):
+    def play(self, name, life):
         z = 0
-        while self._life > 0:
+        while life > 0:
             os.system("cls")
             print(f'Type #{z+1}: {self.tips[z]}')
             z += 1
@@ -32,4 +32,9 @@ class Card():
                 print("Congrats buddy!! You won!")
                 break
             else:
-                self._life -= 1
+                life -= 1
+                if life == 0:
+                    print(f"Unfortunately you lost, {name}!")
+                    break
+            
+            

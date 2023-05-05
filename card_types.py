@@ -37,4 +37,22 @@ germany.add_tips("Robert Bosch was born",
 
 country = [brasil, germany]
 
+vetores = Card('Valderrama')
+vetores.add_tips("Vectors",
+                "Engineer",
+                "Earphone",
+                "Black man",
+                "German's driver")
+               
+
+john_peter = Card("Pedrinho")
+john_peter.add_tips('Agitated person',
+                    'Tkinter man',
+                    'Crazy',
+                    'Kid',
+                    'Genius ideas')
+           
+
+people = [vetores, john_peter]
+
 
